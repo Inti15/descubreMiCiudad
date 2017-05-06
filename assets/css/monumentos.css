@@ -2,9 +2,9 @@
 #portada{
 	margin-right: 0;
 	background-image: url(../img/img-portada/portada-title-reduce.jpg);
-	background-size: 100% 90%;
+	background-size: cover;
 	background-color: pink;
-	height: 500px;
+	height: 700px;
 	width: 100%;
 }
 .logo{
