@@ -9,28 +9,9 @@ body{
   font-size: 20px;
   text-align: center;
 }
-/*Estilos para los margenes*/
-.pad-2{
-  padding: 2%;
-}
-
-.mT-2{
-  top: 2%;
-}
-/*Estilos para el texto*/
-.negrita{
-  font-weight: bold;
-}
-
-.tituloS{
-  color: #f000ff;
-  font-size: 35px;
-}
-
 /*Estilos Grid system*/
 .container{
   width: 100%;
-  max-width: 1200px;
   margin: 0px auto;
 }
 
@@ -94,4 +75,45 @@ body{
 
 .col-12{
   width: 100%;
+}
+/*Estilos para los margenes*/
+.pad-2{
+  padding: 2%;
+}
+
+.mT-2{
+  margin-top: 2%;
+}
+
+.mT-5{
+  margin-top: 5%;
+}
+/*Estilos para el texto*/
+.negrita{
+  font-weight: bold;
+}
+
+.fontW{
+  color: #E0F7FA;
+}
+
+.tituloS{
+  font-size: 35px;
+}
+
+.just{
+  text-align: justify;
+}
+
+.rosa{
+  color: #f000ff;
+}
+/*Colores de FOndo*/
+
+.fondoMor{
+  background-color: #AB47BC;
+}
+/*Estilos para las imágenes*/
+.bordeR{
+  border-radius: 3%;
 }
