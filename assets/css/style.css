@@ -41,3 +41,20 @@ header > img{
 .mB-2{
   margin-bottom: 2%;
 }
+
+.mt10{
+  margin-top: -10%;
+}
+
+.mt28{
+  margin-top: -2.8%;
+  /*margin-bottom: 0px;*/
+}
+
+.mtDos{
+  margin-top: -1.8%;
+}
+
+.mtUno{
+  margin-top: -1%;
+}
