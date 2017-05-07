@@ -29,7 +29,15 @@ a:hover{
 header > img{
   height: 100px;
 }
+/* Otros */
 
+.hgh{
+  height: 100px;
+}
 .col-1medio{
   width: 12.498%;
+}
+
+.mB-2{
+  margin-bottom: 2%;
 }
