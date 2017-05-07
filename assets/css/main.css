@@ -76,9 +76,9 @@ body{
 .col-12{
   width: 100%;
 }
-/*Estilos para los margenes*/
+/*Estilos para los margenes & bordes*/
 .pad-2{
-  padding: 2%;
+  padding: 0 0 2% 0;
 }
 
 .mT-2{
@@ -88,13 +88,26 @@ body{
 .mT-5{
   margin-top: 5%;
 }
+
+.mT-7{
+  margin-top: 7%;
+}
+
+.mB-2{
+  margin-bottom: 2%;
+}
+
+.bordB{
+  border: none;
+  border-bottom: 3px solid black;
+}
 /*Estilos para el texto*/
 .negrita{
   font-weight: bold;
 }
 
 .fontW{
-  color: #E0F7FA;
+  color: #4A148C;
 }
 
 .tituloS{
@@ -113,7 +126,19 @@ body{
 .fondoMor{
   background-color: #AB47BC;
 }
+
+.fondoAz{
+  background-color: #00C8C8;
+}
+
+.fondoV{
+  background-color: #FFC107;
+}
 /*Estilos para las imágenes*/
 .bordeR{
   border-radius: 3%;
+}
+
+.pad{
+  padding: 2%;
 }
