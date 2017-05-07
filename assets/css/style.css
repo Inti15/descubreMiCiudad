@@ -1,7 +1,5 @@
 header{
   width: 100%;
-  border: none;
-  border-bottom: 3px solid black;
 }
 nav{
   /*position: fixed;*/
@@ -10,6 +8,7 @@ nav{
   /*z-index: 1;*/
   /*margin-top: -5%;*/
 }
+
 img{
   width: 100%;
 }
