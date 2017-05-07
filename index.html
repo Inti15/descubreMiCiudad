@@ -25,8 +25,24 @@
     <section class="container mT-5">
       <section class="row">
         <section class="col-4"></section>
-        <section class="col-4">
-          <img src="assets/img/vestidosTipicos.png" alt="">
+        <section class="col-5">
+          <div class="carrusel">
+            <ul>
+              <li><img src="assets/img/vestidosTipicos.png" alt="" class="slide"></li>
+              <li><img src="assets/img/comida.jpg" alt="" class="slide"></li>
+              <li><img src="assets/img/edificiosmx.jpg" alt="" class="slide"></li>
+              <li><img src="assets/img/diversidad.jpg" alt="" class="slide"></li>
+              <li><img src="assets/img/leyendas.jpg" alt="" class="slide"></li>
+            </ul>
+            <div class="circulos">
+              <span id="circ1" class="circulo circBorde transparente relleno" onclick="imgActual(1)"></span>
+              <span id="circ2" class="circulo  circBorde transparente relleno" onclick="imgActual(2)"></span>
+              <span id="circ3" class="circulo  circBorde transparente relleno" onclick="imgActual(3)"></span>
+              <span id="circ4" class="circulo  circBorde transparente relleno" onclick="imgActual(4)"></span>
+              <span id="circ5" class="circulo  circBorde transparente relleno" onclick="imgActual(5)"></span>
+            </div>
+          </div>
+          <!-- <img src="assets/img/vestidosTipicos.png" alt=""> -->
         </section>
       </section>
     </section>
@@ -161,5 +177,6 @@
         <span> JetLag 2017 <br> © Copyright </span>
       </section>
     </footer>
+    <!-- <script type="text/javascript" src="assets/js/app.js" ></script> -->
   </body>
 </html>
