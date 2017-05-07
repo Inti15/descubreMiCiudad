@@ -29,6 +29,145 @@ a:hover{
 header > img{
   height: 100px;
 }
+
+/*Estilos del carrusel*/
+.carrusel{
+  width: 95%;
+  margin: auto;
+  overflow: hidden;/*Oculta los elementos que se salen del carusel*/
+  border: 3px solid #01579B;
+  border-radius: 3%;
+  /*cursor: pointer;*/
+}
+.carrusel ul{
+  display: flex;
+  padding: 0;
+  width: 500%;
+  animation: cambio 25s infinite;
+  /*animation-direction: reverse;*/
+  animation-timing-function: linear;
+}
+
+.carrusel li{
+  width: 100%;
+  list-style: none;
+}
+
+.carrusel img{
+  width: 100%;
+  height: 500px;
+  cursor: pointer;
+}
+
+@keyframes cambio {
+  0% { margin-left: 0;}
+  10% { margin-left: 0;} /*Durante x seg se ve la 1ra img*/
+  /*El cambio de 1 img a otra dura 1seg*/
+  13% {margin-left: -100%;} /*Empieza la 2da img */
+  33% {margin-left: -100%;}
+
+  36% {margin-left: -200%;} /*Empieza la 3ra img */
+  56% {margin-left: -200%;}
+
+  59% {margin-left: -300%;} /*Empieza la 4ta img */
+  79% {margin-left: -300%;}
+
+  81% {margin-left: -400%;} /*Empieza la 5ta img */
+  100% {margin-left: -400%;}
+
+}
+
+#circ1{
+  animation: movimiento1 25s infinite;
+}
+
+#circ2{
+  animation: movimiento2 25s infinite;
+}
+
+#circ3{
+  animation: movimiento3 25s infinite;
+}
+
+#circ4{
+  animation: movimiento4 25s infinite;
+}
+
+#circ5{
+  animation: movimiento5 25s infinite;
+}
+
+@keyframes movimiento1 {
+  0% {background-color: blue;}
+  10% {background-color: blue;}
+
+  13% {background-color: transparent;} /*Empieza la 2da img */
+  100% {background-color: transparent;}
+}
+
+@keyframes movimiento2 {
+  0% {background-color: transparent;}
+  10% {background-color: transparent;}
+
+  13% {background-color: blue;}
+  33% {background-color: blue;}
+
+  36% {background-color: transparent;}
+  100% {background-color: transparent;}
+}
+
+@keyframes movimiento3 {
+  0% {background-color: transparent;}
+  33% {background-color: transparent;}
+
+  36% {background-color: blue;}
+  56% {background-color: blue;}
+
+  59% {background-color: transparent;}
+  100% {background-color: transparent;}
+}
+
+@keyframes movimiento4 {
+  0% {background-color: transparent;}
+  56% {background-color: transparent;}
+
+  59% {background-color: blue;}
+  79% {background-color: blue;}
+
+  81% {background-color: transparent;}
+  100% {background-color: transparent;}
+}
+
+@keyframes movimiento5 {
+  0% {background-color: transparent;}
+  79% {background-color: transparent;}
+
+  81% {background-color: blue;}
+  100% {background-color: blue;}
+}
+
+.circulo{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  border-radius: 50%;
+  /*animation-timing-function: linear;*/
+  cursor: pointer;
+}
+
+.circBorde{
+  border: 1px solid black !important;
+}
+
+.transparente{
+  background-color: transparent;
+}
+
+.relleno:hover{
+  color: #000;
+  background-color: blue !important;
+}
 /* Otros */
 
 .hgh{
