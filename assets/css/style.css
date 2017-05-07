@@ -12,6 +12,7 @@ nav{
 img{
   width: 100%;
 }
+
 a{
   padding: 10px;
   color: black;
@@ -27,4 +28,8 @@ a:hover{
 /*header*/
 header > img{
   height: 100px;
+}
+
+.col-1medio{
+  width: 12.498%;
 }
