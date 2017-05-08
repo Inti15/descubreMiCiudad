@@ -1,31 +1,22 @@
-var slideIndex = 1;
+var tarjetasColor = document.getElementsByClassName("datos");
+var padre, hijo;
+var index = 0;
 
-mostrarImg(slideIndex);
-
-// function plusImg(n) {
-//   mostrarImg(slideIndex += n);
-// }
-
-function imgActual(n) {
-  mostrarImg(slideIndex = n);
+for (var i = 0; i < tarjetasColor.length; i++) {
+  padre = tarjetasColor[i].parentNode;
+  padre.addEventListener("mouseover",mostrarInfo);
+  padre.addEventListener("mouseout", ocultarInfo);
+  index = i+1;
 }
 
-function mostrarImg(n) {
-  var i;
-  var x = document.getElementsByClassName("slide");
-  var circulos = document.getElementsByClassName("circulo");
+function mostrarInfo() {
+  // estilo();
+  hijo = this.firstElementChild;
+  hijo.style.display = "block";
+  // clases();
+}
 
-  if (n<1) {
-    slideIndex = x.length;
-  }
+function ocultarInfo() {
+hijo.style.display = "none";
 
-  // for (i = 0; i < x.length; i++) {
-  //   x[i].style.display = "none";
-  // }
-
-  for (i = 0; i < circulos.length; i++) {
-    circulos[i].className = circulos[i].className.replace("relleno", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  circulos[slideIndex-1].className += "relleno";
 }
