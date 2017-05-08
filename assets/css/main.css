@@ -10,8 +10,8 @@ body{
   text-align: center;
 }
 
-/*img{
-  object-fit: cover;*/
+nav{
+  /*position: fixed;*/
 }
 /*Estilos Grid system*/
 .container{
@@ -148,5 +148,10 @@ body{
 }
 
 .image{
-  width: 80%;
+  width: 90%;
+}
+
+.image:hover{
+  opacity: 0.7;
+  cursor: pointer;
 }

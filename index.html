@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title> Descubre mi país </title>
+    <title> Discover my country </title>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -12,13 +12,13 @@
     <header class="container bordB">
       <img src="assets/img/papel2.jpg">
       <nav class="row ">
-        <section class="col-3 negrita tituloS rosa">
+        <section id="calmecac" class="col-3 negrita tituloS rosa">
           <img src="assets/img/calmecac.png" >
         </section>
         <section class="col-3"></section>
-        <a href="monumentos.html" class="col-3 negrita"> Monumentos y Lugares</a>
-        <a href="leyendas.html" class="col-2 negrita">Diversidad Cultural </a>
-        <!-- <a href="#" class="col-1 negrita"> Idioma</a> -->
+        <a href="monumentos.html" class="col-3 negrita"> Monuments & important places</a>
+        <a href="leyendas.html" class="col-2 negrita">Cultural diversity </a>
+        <a href="#about" class="col-1 negrita"> About us</a>
       </nav>
     </header>
     <!--Carrusel  -->
@@ -28,11 +28,11 @@
         <section class="col-5">
           <div class="carrusel">
             <ul>
-              <li><img src="assets/img/vestidosTipicos.png" alt="" class="slide"></li>
-              <li><img src="assets/img/comida.jpg" alt="" class="slide"></li>
-              <li><img src="assets/img/edificiosmx.jpg" alt="" class="slide"></li>
-              <li><img src="assets/img/diversidad.jpg" alt="" class="slide"></li>
-              <li><img src="assets/img/leyendas.jpg" alt="" class="slide"></li>
+              <li><a href="#"><img src="assets/img/vestidosTipicos.png" alt="" class="slide"></a></li>
+              <li><a href="#"><img src="assets/img/comida.jpg" alt="" class="slide"></a></li>
+              <li><a href="#monuments"><img src="assets/img/edificiosmx.jpg" alt="" class="slide"></a></li>
+              <li><a href="#diversidad"><img src="assets/img/diversidad.jpg" alt="" class="slide"></a></li>
+              <li><a href="leyendas.html"><img src="assets/img/leyendas.jpg" alt="" class="slide"></a></li>
             </ul>
             <div class="circulos">
               <span id="circ1" class="circulo circBorde transparente relleno" onclick="imgActual(1)"></span>
@@ -55,7 +55,7 @@
       </section>
       <section class="row">
         <section class="col-3"></section>
-        <section class="col-6 negrita tituloS mt10"> Monuments and important places </section>
+        <section id="monuments" class="col-6 negrita tituloS mt10"> Monuments and important places </section>
       </section>
       <section class="row pad-2">
         <section class="col-1"></section>
@@ -89,7 +89,7 @@
         </section>
         <section class="row ">
           <section class="col-5"></section>
-          <section class="col-3 negrita tituloS mt10"> Cultural diversity </section>
+          <section id="diversidad" class="col-3 negrita tituloS mt10"> Cultural diversity </section>
           <h2 class="col-4"></h2>
         </section>
         <section class="row ">
@@ -123,7 +123,7 @@
       </section>
       <section class="row">
         <section class="col-4"></section>
-        <section class="col-4 negrita tituloS mt10"> Acerca de </section>
+        <section id="about" class="col-4 negrita tituloS mt10"> About us </section>
         <h2 class="col-4"></h2>
       </section>
       <section class="row">
@@ -138,29 +138,36 @@
         </section>
       </section>
       <section class="row mT-5">
-        <section class="col-3">
+        <section class="col-20 mL-2  bordeR tarjetas">
+          <span class="datos bordeR fondoPurp mB-2"> My name is , I'm  00 and like code</span>
           <img src="assets/img/perfil.jpg" alt="Alexis" class="bordeR image">
         </section>
-        <section class="col-3">
+        <section class="col-20 bordeR tarjetas">
+          <span class="datos bordeR fondoBlk mB-2"> My name is , I'm  00 and like code</span>
           <img src="assets/img/perfil.jpg" alt="Angie" class="bordeR image">
         </section>
-        <section class="col-3">
+        <section class="col-20 bordeR tarjetas">
+          <span class="datos bordeR fondoPurp mB-2"> My name is , I'm  00 and like code</span>
           <img src="assets/img/perfil.jpg" alt="Gaby" class="bordeR image">
         </section>
-        <section class="col-3">
+        <section class="col-20 bordeR tarjetas">
+          <span class="datos bordeR fondoBlk mB-2"> My name is , I'm  00 and like code</span>
           <img src="assets/img/perfil.jpg" alt="Itzel" class="bordeR image">
         </section>
       </section>
 
       <section class="row mT-5 mB-5">
-        <section class="col-1medio"></section>
-        <section class="col-3">
+        <section class="col-1"></section>
+        <section class="col-3  bordeR tarjetas">
+          <span class="datos bordeR fondoBlk mB-2"> My name is , I'm  00 and like code</span>
           <img src="assets/img/perfil.jpg" alt="Macky" class="bordeR image">
         </section>
-        <section class="col-3">
+        <section class="col-3 bordeR tarjetas">
+          <span class="datos bordeR fondoPurp mB-2"> My name is , I'm  00 and like code</span>
           <img src="assets/img/perfil.jpg" alt="Monse" class="bordeR image">
         </section>
-        <section class="col-3">
+        <section class="col-3  bordeR tarjetas">
+          <span class="datos bordeR fondoBlk mB-2"> My name is , I'm  00 and like code</span>
           <img src="assets/img/perfil.jpg" alt="Yesenia" class="bordeR image">
         </section>
       </section>
@@ -177,6 +184,6 @@
         <span> JetLag 2017 <br> © Copyright </span>
       </section>
     </footer>
-    <!-- <script type="text/javascript" src="assets/js/app.js" ></script> -->
+    <script type="text/javascript" src="assets/js/app.js" ></script>
   </body>
 </html>
