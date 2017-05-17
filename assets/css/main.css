@@ -138,6 +138,10 @@ nav{
 .fondoNar{
   background-color: #FFC107;
 }
+
+.fondoNegro{
+  background-color: black;
+}
 /*Estilos para las imágenes*/
 .bordeR{
   border-radius: 3%;
