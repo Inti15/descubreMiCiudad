@@ -16,8 +16,6 @@
 .button-link{
 	text-decoration: none;
 	padding: 15px 20px;
-	margin-top: 85%;
-	margin-left: 25%;
     background-color: rgba(245, 0, 135, .9);
     border: 3px solid #fff;
     color: #fff;
@@ -53,9 +51,6 @@
 	margin-top: 10%;
 	margin-left: 35%;
 }
-#gaming{
-	height: 500px;
-}
 .container{
 	width: 100%;
 	margin: 0px auto;
@@ -64,5 +59,42 @@
 	line-height: 90px;
 	padding: 5% 10%;
 	margin-left: 1%;
+}
+.contenedor{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.imagenes { 
+	width: 500px; 
+	height: 500px; 
+	background:#ecf0f1; 
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px; 
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border: 2px solid #bdc3c7;
+	margin: 1em auto 0;
+	background-color: rgba(128, 0, 128, .5);
+}
+.imagenes>img{
+	width: 20%;
+	height: 20%;
+	margin: 2.2%;
+	border-radius: 10px;
+}
+.margin{
+	margin-top: 85%;
+	margin-left: 25%;
+}
+#gaming{
+	background-color: rgb(245, 0, 135);
+}
+.title{
+	font-size: 4vw;
+	color: #fff;
+	text-align: center;
+}
+#resultado{
+	transform: scale(3.5);
 }
 /*Termina estilos Itzel*/

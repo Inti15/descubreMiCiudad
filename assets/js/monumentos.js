@@ -41,3 +41,41 @@ document.addEventListener("scroll", showBar);
 function ocultar () {
   	modal.style.display="none";
   }
+
+
+//GAMING
+
+var total=0;
+var reiniciar = document.getElementById("reiniciar");
+function recargar(){
+  location.reload();
+}
+function arrastrar(evento){
+  evento.dataTransfer.setData("texto",evento.target.id);
+  
+}
+
+function soltar(evento){
+  evento.preventDefault();
+  var data = evento.dataTransfer.getData("texto");
+  if (data<7){
+    evento.target.appendChild(document.getElementById(data));
+    document.getElementById("resultado").innerHTML="✔"
+    document.getElementById("resultado").style.color="green";
+    total++
+    if (total==6){
+      document.getElementById("resultado").innerHTML="♛ GANASTE ♛"
+      document.getElementById("resultado").style.color="white";
+    }
+  }else{
+    document.getElementById("resultado").innerHTML="✘"
+    document.getElementById("resultado").style.color="#800000";
+    }
+    
+}
+
+function permitirSoltar(evento){
+  evento.preventDefault();
+}
+
+document.addEventListener("click", recargar);
