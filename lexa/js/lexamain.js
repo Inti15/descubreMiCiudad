@@ -19,4 +19,5 @@ function disparaImagen(){
  }
  function nodisparaImagen() {
    this.style.display="none";
+   img.src=this.src;
  }
