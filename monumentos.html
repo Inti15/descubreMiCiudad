@@ -16,27 +16,27 @@
 					</div>
 					<div class="col-5"></div>
 					<div class="col-1">
-						<a href="#" class="button-link buttons">Home</a>
+						<a href="index.html" class="button-link buttons">Inicio</a>
 					</div>
 					<div class="col-1">
-						<a href="#info" class="button-link buttons">Places</a>
+						<a href="#info" class="button-link buttons">Lugares</a>
 					</div>
 					<div class="col-1">
-						<a href="#game" class="button-link buttons">Game</a>
+						<a href="#gaming" class="button-link buttons">Jugar</a>
 					</div>
 				</nav>
 			</div>
 		</section>
-		<section id="portada" class="container">
-			<div class="row buttons">
-				<div class="col-5 align-right">
-					<button id="places" class="button-link">Places</button>
-				</div>
-				<div class="col-5 align-left">
-					<button id="game" onclick="location.href='#gaming"  class="button-link">Game</button>
-				</div>
-			</div>
-		</section>
+          <section id="portada" class="container">
+               <div class="row buttons">
+                    <div class="col-5 align-right">
+                         <a href="#info"><button id="places" class="button-link margin">Lugares</button></a>
+                    </div>
+                    <div class="col-5 align-left">
+                         <a href="#gaming"><button id="game" onclick="location.href='#gaming"  class="button-link margin">Jugar</button></a>
+                    </div>
+               </div>
+          </section>
 		<!--Termina nav-->
 		<article id="info">
 		    <section id="home" class="container alinear">
@@ -161,11 +161,35 @@
              <div id="modal" class="row">    
                     <img class=" col-6 img0">
                     <span class="cerrar">&times;</span>
+               </div></div>
              <section class="col-6"></section>
-           		
+           </article>		
 		<!--Termina sección info-->
 		<section id="gaming" class="container">
-			
+			<div>
+                    <h1 class="title">ARRASTRA Y SUELTA</h1>
+                    <h3>Arrastra los monumentos de la Ciudad de México</h3><br>
+                    <h1 id="resultado"></h1><br>        
+               </div>
+          <div class="contenedor">
+               <div id="contenedor" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="imagenes"></div>
+               <button class="button button-link" id="reiniciar">Reiniciar juego</button>
+               <div id="imagenes" class="imagenes">
+                    <img id="1" src="assets/img/revolucion.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="2" src="assets/img/titeria.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="3" src="assets/img/palacio.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="4" src="assets/img/universum.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="5" src="assets/img/angel.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="6" src="assets/img/cera.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="7" src="assets/img/monumentosmundo/triunfo.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="8" src="assets/img/monumentosmundo/Tajmahal.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="9" src="assets/img/monumentosmundo/sidney.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="10" src="assets/img/monumentosmundo/paris.png" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="11" src="assets/img/monumentosmundo/libertad.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="12" src="assets/img/monumentosmundo/coliseo.jpg" draggable="true" ondragstart="arrastrar(event)">
+          </div>
+          </div>
+          </div> 
 		</section>
            <footer >
              <p>&copy;Copyright free</p>  
