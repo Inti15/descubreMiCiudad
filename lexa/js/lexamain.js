@@ -1,4 +1,5 @@
 
+
 var imagen=document.getElementsByClassName('imagen');
 var modal=document.getElementsByClassName('modal')[0];
 var img=document.getElementById('image');
