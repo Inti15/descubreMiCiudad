@@ -184,8 +184,8 @@ header > img{
   margin-top: -10%;
 }
 
-.mt28{
-  margin-top: -2.8%;
+.mt2{
+  margin-top: -2%;
   /*margin-bottom: 0px;*/
 }
 
@@ -217,4 +217,13 @@ header > img{
 
 .fondoBlk{
   background-color: black;
+}
+/*Enlaces páginas*/
+.paginas{
+  text-align: left;
+}
+
+.enlacesPag{
+  color: white;
+  text-decoration: underline;
 }
