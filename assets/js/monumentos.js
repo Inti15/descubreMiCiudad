@@ -64,7 +64,7 @@ function soltar(evento){
     document.getElementById("resultado").style.color="green";
     total++
     if (total==6){
-      document.getElementById("resultado").innerHTML="♛ GANASTE ♛"
+      document.getElementById("resultado").innerHTML="♛ WIN ♛"
       document.getElementById("resultado").style.color="white";
     }
   }else{

@@ -30,10 +30,10 @@
 		<section id="portada" class="container">
 			<div class="row buttons">
 				<div class="col-5 align-right">
-					<button id="places" class="button-link margin">Places</button>
+					<a href="#info"><button id="places" class="button-link margin">Places</button></a>
 				</div>
 				<div class="col-5 align-left">
-					<button id="game" onclick="location.href='#gaming"  class="button-link margin">Game</button>
+					<a href=#gaming><button id="game" class="button-link margin">Game</button></a>
 				</div>
 			</div>
 		</section>
@@ -172,7 +172,30 @@
                    
 		<!--Termina sección info-->
 		<section id="gaming" class="container">
-			
+			<div>
+                    <h1 class="title"><p>DRAG AND DROP</p>
+                    <h3>Drag the monuments of Mexico City</h3><br>
+                    <h1 id="resultado"></h1><br>        
+               </div>
+          <div class="contenedor">
+               <div id="contenedor" ondrop="soltar(event)" ondragover="permitirSoltar(event)" class="imagenes"></div>
+               <button class="button button-link" id="reiniciar">Restart</button>
+               <div id="imagenes" class="imagenes">
+                    <img id="1" src="assets/img/revolucion.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="2" src="assets/img/titeria.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="3" src="assets/img/palacio.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="4" src="assets/img/universum.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="5" src="assets/img/angel.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="6" src="assets/img/cera.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="7" src="assets/img/monumentosmundo/triunfo.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="8" src="assets/img/monumentosmundo/Tajmahal.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="9" src="assets/img/monumentosmundo/sidney.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="10" src="assets/img/monumentosmundo/paris.png" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="11" src="assets/img/monumentosmundo/libertad.jpg" draggable="true" ondragstart="arrastrar(event)">
+                    <img id="12" src="assets/img/monumentosmundo/coliseo.jpg" draggable="true" ondragstart="arrastrar(event)">
+          </div>
+          </div>
+          </div> 
 		</section>
           <footer >
              <p>&copy;Copyright free</p>  
